@@ -1,0 +1,32 @@
+/* Your Journey */
+
+/* root - Set a background color and padding for the document's root element */
+:root {
+    --main-bg-color-white: white;
+    --main-bg-color-blue: rgb(49, 139, 142);
+    --main-bg-color-lightblue: rgb(166, 234, 236);
+    --main-bg-color-grey700: rgb(99, 97, 97);
+}
+
+body {
+    font-family:  "Lato", sans-serif, "arial", "verdana" !important ;
+    background-color: var(bg-color-white) ;
+}
+
+
+
+.nav-buttons {
+    padding: 10px; 
+    background-color: var(--main-bg-color-white);
+}
+
+.btn btn-primary {
+    cursor: pointer;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.test {
+    border: 2px solid pink;
+}
