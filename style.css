@@ -12,20 +12,81 @@ body {
     font-family:  "Lato", sans-serif, "arial", "verdana" !important ;
     background-color: var(bg-color-white) ;
 }
-
-
+ 
 
 .nav-buttons {
     padding: 10px; 
-    background-color: var(--main-bg-color-white);
 }
 
-.btn btn-primary {
+.my-custom-button {
     cursor: pointer;
+    width: 40px; 
     margin: 8px;
     display: flex;
     justify-content: center;
+    background-color: var(--main-bg-color-blue);
+    border-radius: 4%;   
 }
+
+.background-link .full-section {
+        background-image: url("images/homepage.png"); 
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .overlay-container {
+        position: absolute;
+
+    }
+
+    .text-overlay0 {
+        position: absolute;
+        top: 65%;
+        left: 54%;
+        text-align: end;
+        transform: translate(10%, 100%) ;
+        color: white;
+        font-weight: bolder;
+        font-style: oblique;
+        font-size: 55px;
+    }
+
+
+    .text-overlay1 {
+        position: absolute;
+        top: 70%;
+        left: 54%;
+        text-align: end;
+        transform: translate(10%, 100%) ;
+        color: white;
+        font-size: 55px;
+    }
+
+    .text-overlay2 {
+        position: absolute;
+        top: 85%;
+        left: 55%;
+        text-align: end;
+        transform: translate(5%, 95%) ;
+        color: white;
+        font-style: oblique;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    .icon-button//// {
+        width: 15px; 
+        padding: 10px;
+        margin: 10px;
+    }
 
 .test {
     border: 2px solid pink;
