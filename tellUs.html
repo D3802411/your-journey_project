@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Journey</title>
+    <title>Tell us and login</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -47,10 +47,33 @@
         </div>
     </header>
 
-    <main class="container">
+
+    <main>
 
 
+        <div class="form-container">
 
+            <form class="Login" action="submit" method="post">
+                <div class="text-container1">
+                    <h2>Connexion</h2><br> <br>
+                    <p> Connecte-toi et raconte toutes tes aventures de voyage à la communauté... On est curieux !</p>
+
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" email="Email" class="email" placeholder="your email address" >
+                    <br><br>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" class="password" placeholder="your password" required minlength="8">
+                    <!--* à réajouter après que le lien du bouton marche : required minlength="8" -->
+                </div>
+
+                <div class="btn-container">
+                    <a href="create-article.html"> <input type="create-article.html" value="Rentrer" id="submit-btn" class="submit-btn text-white fw-bold">
+                    </a> <br><br>
+                    <input type="submit" value="Retour" id="back" class="submit-btn text-white fw-bold">
+                </div>
+
+            </form>
+        </div>
 
 
 
@@ -90,16 +113,18 @@
 
         <div class="d-flex justify-content-center">
 
-            <a href="https://www.facebook.com" class="icon-button" target="_blank"> <i class="fa fa-facebook"> </i>
+            <a href="https://www.facebook.com" class="icon-button" target="_blank"> <i
+                    class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com" class="icon-button" target="_blank"> <i class="fa fa-instagram">
+            <a href="https://www.instagram.com" class="icon-button" target="_blank"> <i class="fa-brands fa-instagram">
                 </i> </a>
-            <a href="https://x.com/Accueil" class="icon-button" target="_blank"> <i class="fa fa-twitter"> </i> </a>
-            <a href="https://www.flickr.com/" class="icon-button" target="_blank"> <i class="fa fa-flickr"> </i>
+            <a href="https://x.com/Accueil" class="icon-button" target="_blank"> <i class="fa-brands fa-twitter"> </i>
+            </a>
+            <a href="https://www.flickr.com/" class="icon-button" target="_blank"> <i class="fa-brands fa-flickr"> </i>
             </a>
         </div>
         <div class=" d-flex justify-content-center">
-            <p>Copyright&copy; 2024 Your Journey. All Rights Reserved</p>
+            <p class="p-footer">Copyright&copy; 2024 Your Journey. All Rights Reserved</p>
 
         </div>
 

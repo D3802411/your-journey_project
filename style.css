@@ -4,18 +4,23 @@
 :root {
     --main-bg-color-white: white;
     --main-bg-color-blue: rgb(49, 139, 142);
-    --main-bg-color-lightblue: rgb(166, 234, 236);
-    --main-bg-color-grey700: rgb(99, 97, 97);
+    --main-bg-color-darkblue: rgb(10, 91, 105);
+    --main-bg-color-lightblue: rgb(217, 238, 237);
 }
 
 body {
     font-family:  "Lato", sans-serif, "arial", "verdana" !important ;
     background-color: var(bg-color-white) ;
 }
+
  
+header {
+    margin-top: 15px;
+}
 
 .nav-buttons {
     padding: 10px; 
+    margin-top: 15px;
 }
 
 .my-custom-button {
@@ -28,7 +33,20 @@ body {
     border-radius: 4%;   
 }
 
-.background-link .full-section {
+.submit-btn {
+    cursor: pointer;
+    width: 90px; 
+    margin: 15px;
+    padding: 5px ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-bg-color-darkblue);
+    border-radius: 4%;   
+}
+
+
+.background-link .background-image {
         background-image: url("images/homepage.png"); 
         background-size: cover;
         background-position: center center;
@@ -38,55 +56,144 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: left;
+
     }
+
 
     .overlay-container {
         position: absolute;
-
+        top: 70%;
+        bottom: 5%;
+        left: 52%;
+        text-align: left;
+        flex-flow: column wrap;
+        h1 {
+            font-weight: bolder;
+            font-size: larger; 
+        }
     }
 
-    .text-overlay0 {
-        position: absolute;
-        top: 65%;
-        left: 54%;
-        text-align: end;
-        transform: translate(10%, 100%) ;
-        color: white;
-        font-weight: bolder;
-        font-style: oblique;
-        font-size: 55px;
-    }
 
 
     .text-overlay1 {
-        position: absolute;
-        top: 70%;
-        left: 54%;
-        text-align: end;
-        transform: translate(10%, 100%) ;
-        color: white;
-        font-size: 55px;
+        color: red;
+        font-style: oblique;
+        font-size: 40px;
+        font-weight: 200;
     }
 
+
     .text-overlay2 {
-        position: absolute;
-        top: 85%;
-        left: 55%;
-        text-align: end;
-        transform: translate(5%, 95%) ;
-        color: white;
+        color: red;
+        font-style: oblique;
+    }
+
+        .text-overlay3 {
+        color: red;
         font-style: oblique;
     }
 
     p {
+    font-size: 18px;
+
+    }
+
+
+    .p-footer {
         font-size: 10px;
     }
-    .icon-button//// {
-        width: 15px; 
-        padding: 10px;
-        margin: 10px;
+
+footer {
+    margin-top: 10px;
+}
+
+
+    .icon-button {
+        width: 25px; 
+        margin: 4px;
     }
+
+.form-container {
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--main-bg-color-lightblue);
+    border-radius: 4%;
+    box-shadow: 10px 10px 10px var(--main-bg-color-blue) ;
+
+  }
+
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        color: var(--main-bg-color-darkblue);
+        font-weight: bolder;
+    }
+    textarea {
+        height: 100px;
+    }
+
+}
+
+.text-container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        color: var(--main-bg-color-darkblue);
+        font-weight: bolder;
+    }
+}
+
+.article-container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--main-bg-color-lightblue);
+    border-radius: 4%;
+    box-shadow: 10px 10px 10px var(--main-bg-color-blue) ;
+}
+
+
+
+
+.lname, .fname, .email, .message {
+    width: 100%;
+    height: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.place, .country, .attraction, .activity {
+    width: 40%;
+    height: 30px;
+}
+.article-area {
+    height: 150px;
+    width: 100%;
+}
+
+.left-boxes, .right-boxes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .test {
     border: 2px solid pink;
