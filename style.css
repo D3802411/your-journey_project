@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family:  "Lato", sans-serif, "arial", "verdana" !important ;
+    font-family:  "Lato", "sans-serif", "arial", "verdana" !important ;
     background-color: var(bg-color-white) ;
 }
 
@@ -67,6 +67,14 @@ header {
         left: 52%;
         text-align: left;
         flex-flow: column wrap;
+        color: rgb(255, 255, 255);
+    }
+
+
+
+    .text-overlay1 {
+        font-style: oblique;
+        font-size: 40px;
         h1 {
             font-weight: bolder;
             font-size: larger; 
@@ -75,21 +83,11 @@ header {
 
 
 
-    .text-overlay1 {
-        color: red;
-        font-style: oblique;
-        font-size: 40px;
-        font-weight: 200;
-    }
-
-
     .text-overlay2 {
-        color: red;
         font-style: oblique;
     }
 
         .text-overlay3 {
-        color: red;
         font-style: oblique;
     }
 
@@ -136,7 +134,7 @@ footer {
         font-weight: bolder;
     }
     textarea {
-        height: 100px;
+        height: 150px;
     }
 
 }
@@ -175,16 +173,18 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 8px;
 }
 
 
 .place, .country, .attraction, .activity {
-    width: 40%;
+    width: 90%;
     height: 30px;
+    margin-right: 8px;
+    margin-left: 5px;
 }
 .article-area {
-    height: 150px;
+    height: 130px;
     width: 100%;
 }
 
