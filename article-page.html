@@ -24,6 +24,9 @@
   <body>
     <header class="container test">
       <div class="row align-items-center d-flex justify-content-center">
+        <div class="text-box col-md">
+          <h4 class="site-name" > <span class="oblique">Your</span> Journey</H4>
+        </div>
         <div class="nav-buttons my-custom-button col-md">
           <a class="btn text-white fw-bold" href="index.html" role="button"width="400px">Accueil</a>
         </div>
@@ -70,23 +73,34 @@
                 <a href="images/Image7.png"  target="_blank"> <img src="images/Image7.png" class="thumbnail"></a>
                 </div>
 
-                <div class="buttons">
+                <div class="social-buttons">
                     <button class="like-button"> Like &#9829;</button>
-                    <input type="button" class="replies-button text-white fw-bold" value="Replies">
                 </div>
                 
                 <div class="line-space">
                 </div>
 
                 <div class="comment-container">
-                  <div class="comment-1">
+                  <div class="text-comment">
+                  <h3>Commentaires</h3>
+                  <textarea class="comment-area" placeholder="post your comment here" maxlength="80"></textarea>
+                  </div>
+                <div class="social-buttons">
+                    <input type="button" class="comment-button text-white fw-bold" value="envoyer">
+                  </div>
+                </div>  
+
+  <!-- you must add some comments
+                     <div class="comment-1">
                       <h6>Usename1</h6>
                       <p> ouyfouyfhe printing and Lorem Ipsum</p>
                   </div>
-                  <div class="comment-1 " >
+                  <div class="comment-1" >
                     <h6>Usename2</h6>
                       <p> ouyfouyfhe printing and Lorem Ipsum</p>
                   </div>
+                  --> 
+                </div>
                   
             </article>
 
@@ -120,16 +134,15 @@
               
               <div class="line-space">
               </div>
-
               <div class="comment-container">
-                <div class="comment-1">
-                    <h6>Usename1</h6>
-                    <p> ouyfouyfhe printing and Lorem Ipsum</p>
+                <div class="text-comment">
+                <h3>Commentaires</h3>
+                <textarea class="comment-area" placeholder="post your comment here" maxlength="80"></textarea>
                 </div>
-                <div class="comment-1 " >
-                  <h6>Usename2</h6>
-                    <p> ouyfouyfhe printing and Lorem Ipsum</p>
+              <div class="social-buttons">
+                  <input type="button" class="comment-button text-white fw-bold" value="envoyer">
                 </div>
+              </div>  
              
           </article>
 
@@ -137,7 +150,7 @@
             </section>
 
             <aside class="blocks test">
-              <form class="side-search test" action="submit" method="post">
+              <form class="side-search" action="submit" method="post">
                 <div class="text-container1">
                     <h2>Recherche par mots clé</h2>
                     <p> Rentrez les mots clé pour démarrer votre recherche. Attention, les champs avec * sont obligatoires
