@@ -1,6 +1,9 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "onFocusChange",
-  "prettier.printWidth": 250
+  "prettier.printWidth": 250,
+  "prettier.endOfLine": "auto",
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true
 }

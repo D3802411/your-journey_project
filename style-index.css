@@ -1,0 +1,269 @@
+/* Your Journey */
+
+/* root - Set a background color and padding for the document's root element */
+:root {
+  --main-bg-color-white: white;
+  --main-bg-color-blue: rgb(49, 139, 142);
+  --main-bg-color-darkblue: rgb(2, 50, 58);
+  --main-bg-color-lightblue: rgb(217, 238, 237);
+}
+
+body {
+  font-family: "Lato", "sans-serif", "arial", "verdana" !important ;
+  background-color: var(bg-color-white);
+}
+
+/* same BS class for header and footer */
+.container {   
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.container4buttons {
+  justify-content: center;
+}
+
+.site-name {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 30px;
+  color: var(--main-bg-color-blue);
+  .oblique {
+    font-style: oblique;
+  }
+}
+
+.nav-buttons {
+  cursor: pointer;
+  padding: 5px;  
+  width: 150px;
+  margin: 8px;
+  justify-content: space-between; 
+  text-align: center;
+  background-color: var(--main-bg-color-blue);
+  border-radius: 4%;
+}
+
+.footer-btn {
+  width: 250px;  
+}
+
+.submit-btn {
+  cursor: pointer;
+  width: 150px;
+  margin: 8px;
+  padding: 5px;
+  justify-content: space-between;  /* Space between items */
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-bg-color-darkblue);
+  border-radius: 6%;
+}
+
+.background-image {
+  background-image: url("images/homepage.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 65%;
+  bottom: 5%;
+  left: 52%;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.text-overlay1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 20px;
+  h1 {
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .oblique {
+    font-style: oblique;
+  }
+}
+
+.text-overlay2 {
+  font-style: oblique;
+}
+
+.text-overlay3 {
+  font-style: oblique;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+
+
+/* CSS for footer starts here */
+.p-footer {
+  font-size: 10px;
+}
+
+.icon-button {
+  width: 25px;
+  margin: 4px;
+}
+
+.social-buttons {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  text-size-adjust: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* CSS for form starts here */
+
+/*background for forms pages*/
+.section-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--main-bg-color-lightblue);
+  border-radius: 4%;
+  box-shadow: 10px 10px 10px var(--main-bg-color-blue);
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    color: var(--main-bg-color-darkblue);
+    font-weight: bolder;
+  }
+  textarea {
+    height: 150px;
+  }
+}
+
+.text-container1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    color: var(--main-bg-color-darkblue);
+    font-weight: bolder;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  
+  .container4buttons {  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2px;
+    /*flex-flow: column wrap;*/
+  }
+  /*
+  .col-md {
+    flex: 0 0 50% !important; /* Each item takes 50% of the row
+    max-width: 50%; 
+    text-align: center;
+  } */
+
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 15px;
+    color: var(--main-bg-color-blue);
+    .oblique {
+      font-style: oblique;
+    }
+  }
+
+  .homeImg {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    /* width: 100%; Shrink for small screens 
+    /* height: auto; /* Reduce height */
+    /* background-size: cover; /* Shrinks image to fit */
+  }
+
+  .overlay-container {
+    position: absolute;
+    top: 90%;
+    bottom: 10%;
+    left: 52%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  
+  .text-overlay1 {
+    font-size: 20px;
+    font-weight: 20;
+    line-height: 10px;
+    .oblique {
+      font-style: oblique;
+    }
+  }
+  
+  .text-overlay2 {
+    font-size: 20px;
+    font-style: oblique;
+  }
+  
+  .text-overlay3 {
+    font-size: 10px;
+    font-style: oblique;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .p-footer {
+    font-size: 6px;
+  }
+  
+  footer {
+    margin-top: 5px;
+  }
+  /*
+  .burger-icon {
+    display: block;
+  }*/
+}
+
+.test {
+  border: 2px solid pink;
+}
