@@ -15,46 +15,41 @@ body {
 
 /* same BS class for header and footer */
 .container {   
-  margin-top: 10px;
+  margin-top: 1px;
   display: flex;
   justify-content: center;
 }
 
 .container4buttons {
   justify-content: center;
-}
-
-.site-name {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 30px;
-  color: var(--main-bg-color-blue);
-  .oblique {
-    font-style: oblique;
-  }
+  width: 100%;
+  padding: 1px;
 }
 
 .nav-buttons {
   cursor: pointer;
-  padding: 5px;  
-  width: 150px;
-  margin: 8px;
-  justify-content: space-between; 
+  padding: 2px;  
+  width: 170px;
+  margin-top: 2px;
+  margin: 4px;
   text-align: center;
   background-color: var(--main-bg-color-blue);
   border-radius: 4%;
 }
 
+.logo-box {
+  width: 120px;
+}
+
 .footer-btn {
-  width: 250px;  
+  margin-top: 2px; 
 }
 
 .submit-btn {
   cursor: pointer;
-  width: 150px;
+  width: 120px;
   margin: 8px;
   padding: 5px;
-  justify-content: space-between;  /* Space between items */
   align-items: center;
   text-align: center;
   background-color: var(--main-bg-color-darkblue);
@@ -73,33 +68,22 @@ body {
   align-items: center;
 }
 
+
 .overlay-container {
   position: absolute;
-  top: 65%;
+  top: 60%;
   bottom: 5%;
   left: 52%;
   text-align: left;
   color: rgb(255, 255, 255);
 }
 
-.text-overlay1 {
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 20px;
-  h1 {
-    font-weight: bolder;
-    font-size: larger;
-  }
-  .oblique {
-    font-style: oblique;
-  }
-}
 
-.text-overlay2 {
+.overlay2 {
   font-style: oblique;
 }
 
-.text-overlay3 {
+.overlay3 {
   font-style: oblique;
 }
 
@@ -134,121 +118,40 @@ p {
 }
 
 
-/* CSS for form starts here */
-
-/*background for forms pages*/
-.section-bg {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-container {
-  height: 500px;
-  width: 400px;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  padding: 20px;
-  align-items: center;
-  background-color: var(--main-bg-color-lightblue);
-  border-radius: 4%;
-  box-shadow: 10px 10px 10px var(--main-bg-color-blue);
-}
-
-.text-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  h2 {
-    color: var(--main-bg-color-darkblue);
-    font-weight: bolder;
-  }
-  textarea {
-    height: 150px;
-  }
-}
-
-.text-container1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  h2 {
-    color: var(--main-bg-color-darkblue);
-    font-weight: bolder;
-  }
-}
-
-
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   
   .container4buttons {  
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center; 
+    margin: 1px;
+    column-gap: 1px;
+  }
+
+  .nav-buttons .footer-btn {
+    width: 110px;
     margin: 2px;
-    /*flex-flow: column wrap;*/
-  }
-  /*
-  .col-md {
-    flex: 0 0 50% !important; /* Each item takes 50% of the row
-    max-width: 50%; 
-    text-align: center;
-  } */
-
-  .site-name {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 15px;
-    color: var(--main-bg-color-blue);
-    .oblique {
-      font-style: oblique;
-    }
   }
 
-  .homeImg {
-    width: 100vw;
-    height: auto;
-    object-fit: contain;
-    /* width: 100%; Shrink for small screens 
-    /* height: auto; /* Reduce height */
-    /* background-size: cover; /* Shrinks image to fit */
-  }
+  .full-section .background-image {
+    object-fit: cover;
+
+  } 
 
   .overlay-container {
     position: absolute;
-    top: 90%;
-    bottom: 10%;
-    left: 52%;
+    top: 80%;
+    left: 50%;
     text-align: left;
     color: rgb(255, 255, 255);
-  }
-  
-  .text-overlay1 {
-    font-size: 20px;
-    font-weight: 20;
-    line-height: 10px;
-    .oblique {
-      font-style: oblique;
+    .logo {
+      width: 200px;
+      height: auto;
     }
-  }
-  
-  .text-overlay2 {
-    font-size: 20px;
-    font-style: oblique;
-  }
-  
-  .text-overlay3 {
-    font-size: 10px;
-    font-style: oblique;
-  }
-
-  p {
-    font-size: 10px;
+    h3, h5 {
+      font-size: 15px;
+      text-justify: distribute;
+    }
   }
 
   .p-footer {
@@ -258,10 +161,7 @@ p {
   footer {
     margin-top: 5px;
   }
-  /*
-  .burger-icon {
-    display: block;
-  }*/
+
 }
 
 .test {
